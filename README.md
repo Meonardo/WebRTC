@@ -1,5 +1,5 @@
 ## WebRTC Binaries for iOS
-* Try to fix `RTCCameraVideoCapturer` handle device rotation incorrectly issue, will make a release soon.
+* Try to fix `RTCCameraVideoCapturer` handle device rotation incorrectly issue, please see release M90.1.
 ----------
 ## WebRTC Binaries for iOS
 This repository contains unofficial distribution of WebRTC framework binaries for iOS.
