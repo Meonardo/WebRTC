@@ -1,5 +1,7 @@
-## WebRTC Binaries for iOS
-* Try to fix `RTCCameraVideoCapturer` handle device rotation incorrectly issue, please see release M90.1.
+## Changelog
+
+Add a delegate method `- (RTCVideoRotation)rotationForCameraVideoCapturer` for `RTCCameraVideoCapturer` to handle device orientation update events.
+
 ----------
 ## WebRTC Binaries for iOS
 This repository contains unofficial distribution of WebRTC framework binaries for iOS.
@@ -10,13 +12,13 @@ Since version M80, Google has [deprecated](https://groups.google.com/g/discuss-w
 The binary releases correspond with official Chromium releases and branches as specified in the [Chromium dashboard](https://chromiumdash.appspot.com/branches).
 
 ## 💡 Things to know
-* All binaries in this repository are compiled from the official WebRTC [source code](https://webrtc.googlesource.com/src/) without any modifications to the sources code or to the output binaries.
-* Dynamic framework (xcframework format) which contains binaries for armv7, arm64, x86 and x86_x64.
+* All binaries in this repository are compiled from the official WebRTC [source code](https://webrtc.googlesource.com/src/).
+* Dynamic framework (xcframework format) which contains binaries for arm64, x86 and x86_x64.
 * Bitcode is included and this is the reason for the larger file size.
-* Supports both 32 bit and 64 bit.
+* Supports 64 bit only.
 
 ## 📢 Requirements
-* iOS 10+
+* iOS 11+
 
 ## 🚚 Installation
 
@@ -42,12 +44,6 @@ dependencies: [
 1. Download the framework from the [releases](https://github.com/stasel/WebRTC/releases) section.
 2. Unzip the file.
 3. Add the xcframework to your target(s) embedded frameworks.
-
-### Cocoapods
-Coming soon
-
-### Carthage
-Coming soon
 
 ## 👷 Usage
 To import WebRTC to your code add the following import statement
