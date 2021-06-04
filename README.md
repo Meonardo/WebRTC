@@ -1,6 +1,7 @@
 ## Changelog
 
 Add a delegate method `- (RTCVideoRotation)rotationForCameraVideoCapturer` for `RTCCameraVideoCapturer` to handle device orientation update events.
+Add renderers property in class `RTCVideoTrack`. 
 
 ----------
 ## WebRTC Binaries for iOS
